@@ -305,8 +305,8 @@ footer p a{
         padding: 20px 0;
     }
     .about{
-        background-size: 314px 667px;
-        background-repeat: no-repeat;
+        background-size: cover;
+
     }
     .about div h1{
         font-size: 30px;
