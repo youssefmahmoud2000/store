@@ -1,0 +1,332 @@
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: sans-serif;
+     text-transform: capitalize;
+}
+.parent_container{
+    width: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+ ::-webkit-scrollbar{
+    width: fit-content;
+
+}
+::-webkit-scrollbar-thumb{
+background-color: #c7791b;
+}
+::-webkit-scrollbar-track{
+    background-color: #23272c;
+}
+/* the start of navbar */
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+z-index: 999;
+padding: 10px 30px ;
+height: 90px;
+background-color: #c7791b ;
+
+}
+
+.nav_child-right i {
+    display: none;
+color: white;
+font-size: 35px;
+
+}
+.logo_parents img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.navbar_links a {
+text-decoration: none;
+font-size: 18px;
+margin: 0 8px;
+color: black;
+}
+/* the end of navbar */
+/* section one start */
+.banner{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(background-1.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.banner h1{
+    font-size: 40px;
+
+}
+/* section one end */
+/* menu start */
+.menu{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(background-2.jpg);
+    background-size: 100% 100%;
+    padding: 60px 30px ;
+}
+.tittle {
+    font-weight: 400;
+    color: #c7791b;
+    text-align: center;
+    font-size: 50px;
+    margin: 20px 0;
+}
+.menu .parent_menu{
+    display: flex;
+    justify-content: center; 
+    padding: 20px 50px;
+    flex-wrap: wrap;
+}
+.menu .parent_menu .menu_item{
+    width: 300px ;
+    height: 300px;
+    margin: 30px;
+    overflow: hidden;
+    position: relative;
+}
+.menu .parent_menu .menu_item img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    
+}
+.menu .parent_menu .menu_item .iconss{
+ padding: 10px 20px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #c7791b;
+    align-items: center;
+  position: absolute;
+  bottom:-100px;
+  left: 0;
+
+}
+.menu .parent_menu .menu_item:hover  .iconss    {
+    bottom: 0;
+    transition: 0.5s linear;
+}
+.iconss i{
+    color: white;
+    font-size: 30px;
+}
+/* menu end */
+
+
+/* <!-- about start  --> */
+
+.about{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(background-3.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+}
+.about div{
+    max-width: 600px;
+    margin: 50px 60px 0;
+    padding-left: 30px;
+}
+.about div h1{
+    color: #c7791b;
+    font-size: 50px;
+    border-bottom: 5px solid #c7791b;
+    width: fit-content;
+}
+.about div p{
+    line-height: 1.7;
+    margin: 20px 0;
+    color: white;
+}
+
+/* <!-- about end  --> */
+/* <!-- ============================> --> */
+
+/* <!-- service start --> */
+.services {
+    padding:20px ;
+    min-height: 500px;
+    background-image: url(background-4.jpg);
+    background-size: 100% 100%;
+}
+.services .parent_services{
+    display: flex;
+    justify-content: space-around;
+    padding: 20x;
+    flex-wrap: wrap;
+}
+.services .parent_services div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 20px;
+    height: 200px;
+
+}
+.services .parent_services div img{
+    height: 100px;
+    width: 100px;
+}
+.services .parent_services div .tittle{
+    font-size: 30px;
+}
+/* <!-- service end --> */
+/* <!-- ============================> --> */
+/* <!-- contact start --> */
+.contact{
+    min-height: 400px;
+    background-image: url(background-5.jpg);
+    background-size: 100% 100%;
+}
+.contact h1{
+    text-align: center;
+    padding-top: 20px;
+}
+.contact form{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding: 0 30px;
+}
+.contact form div{
+    width: 49%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact form div input{
+    width: 100%;
+    height: 60px;
+    padding: 20px 0 20px 20px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 8px 0px black ;
+}
+.contact form div .massage{
+    height: 140px;
+}
+.contact form div input[type=submit] {
+    background-color: #23272c;
+    box-shadow: none;
+    font-size: 25px;
+    font-weight: 400;
+    color: #c7791b;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+.contact form div input[type=submit]:hover{
+    background-color: #c7791b;
+    color: #23272c;
+}
+/* <!-- contact end --> */
+/* ====================================> */
+/* <!-- footer start --> */
+footer{
+    min-height: 60px;
+    background-color: #23272c;
+    width:100% ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+footer p{
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+}
+footer p a{
+    text-decoration: none indianred;
+    color: #c7791b;
+    margin-left: 0;
+}
+ #whatsapp{
+    color: #c7791b;
+    font-size: 20px;
+
+}
+ #whatsap i{
+    color: green;
+    font-size: 25px;
+}
+/* <!-- footer end --> */
+@media only screen and (max-width:600px){
+    .nav_child-right .fa-bars{
+        display: block !important ;
+    }
+    .nav_child-right .navbar_links{
+        position: absolute;
+        height: 250px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        right: -300px;
+        top: 0;
+        background-color: #23272c;
+        transition: 1  linear;
+    }
+    .navbar_links a{
+        margin: 10px 0;
+        color: white;
+        font-size: 25px;
+    }
+    .nav_child-right:hover .navbar_links{
+        right: 0px;
+        top:10px;
+        
+    }
+    .menu{
+        padding: 50px 10px;
+    }
+    .menu .parent_menu{
+        padding: 20px 0;
+    }
+    .about{
+        background-size: 314px 667px;
+        background-repeat: no-repeat;
+    }
+    .about div h1{
+        font-size: 30px;
+        margin-left: -50px;
+    }
+    .about div p{
+        margin-left: -50px;
+        font-size: 15px;
+    }
+    .contact{
+        padding: 40px 20px;
+    }
+    .contact form{
+        padding: 0;
+    }
+    .contact form div{
+        width: 100%;
+    }
+    footer p{
+        margin: 0 0 5px 0;
+
+    }
+}
